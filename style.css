@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -11,52 +12,85 @@ ul, ol, li {
     list-style: none;
 }
 
-html, body{
+html, body {
     scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
 }
 
-
-
-header{
+header {
     background-color: black;
     position: fixed;
-    width: 100vw;
-
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 16px;
 }
 
 header nav a {
     color: white;
     padding: 8px;
-    transition: 1s;
+    transition: 0.3s;
 }
- header nav a:hover{
-     background-color: lightblue;
-     color: black;
-     padding: 8;
- }
 
- .grupo{
-     height: 100vh;
- }
+header nav a:hover {
+    background-color: lightblue;
+    color: black;
+    padding: 8px;
+}
 
- #vermelho{
-     background-color: red;
+main {
+    margin-top: 60px;
+}
 
- }
- #verde{
-     background-color: green;
- }
- #azul{
-     background-color: blue;
- }
- #amarelo{
-     background-color: yellow;
- }
- #roxo{
-     background-color: purple;
- }
+.grupo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#preto {
+    background-color: black;
+}
+
+#vermelho {
+    background-color: rgb(248, 0, 0);
+}
+
+#azul {
+    background-color: blue;
+}
+
+#amarelo {
+    background-color: yellow;
+    color: black;
+}
+
+#roxo {
+    background-color: purple;
+}
+
+h2, h3, h4, h5, h6 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 500px;
+    line-height: 1.6;
+}
